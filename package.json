@@ -2,9 +2,10 @@
   "name": "rfid-backend",
   "version": "1.0.0",
   "description": "Proyecto Backend para Sistema RFID de la UAI Rosario",
-  "main": "src/server.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts"
   },
   "dependencies": {
@@ -15,8 +16,7 @@
     "tedious": "^18.2.1"
   },
   "devDependencies": {
-    "@types/node": "^26.6.3",
-    "nodemon": "^3.1.4",
+    "@types/node": "^26.6.6",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
